@@ -1,0 +1,227 @@
+<h1>AGCalendar Module <img src="http://f.cl.ly/items/422Q2T3G043h0O171E1z/acgLogo.png" height="35" valign="bottom" /></h1>
+
+<h2>Description</h2>
+
+<p>AGCalendar enables you to access the native calendar on your iPhone, iPad or iPod. EventKit and Core Data are both supported data sources. This enables you to switch between iCal and your custom calendar. Some more information below.</p>
+
+<ul>
+<li><strong>EventKit</strong>: All events including the events in your native calendar will be shown. Events added will also be added to your native iCal.</li>
+<li><strong>CoreData</strong>: Uses Core Data to store your calendar-events. Only events added by your application will be shown. Added events will not be added to iCal. This also allows you to add more details to your events. </li>
+</ul>
+
+<blockquote>
+  <p><img src="http://f.cl.ly/items/1h3O0S3p2T0f1K2G2h1w/info1.png" height="228" style="margin-right:20px;" /></p>
+</blockquote>
+
+<h2>Accessing the Calendar Module</h2>
+
+<p>To access this module from JavaScript, you would do the following:</p>
+
+<blockquote>
+<pre><code>Titanium.Calendar = Ti.Calendar = require("ag.calendar");
+</code></pre>
+</blockquote>
+
+<h2>Functions</h2>
+
+<h2><code>Ti.Calendar.dataSource(ids[string])</code></h2>
+
+<p>This will set the data source you want to use. <br />
+If this is not set, the calendar will default to EventKit as your data source.     </p>
+
+<p>Please read the  <em>description</em> above for more information.</p>
+
+<h3>Argument</h3>
+
+<ul>
+<li>[string] <strong>dataSource</strong>: <em>eventkit</em> or <em>coredata</em> (Default: eventkit)</li>
+</ul>
+
+<h3>Example</h3>
+
+<blockquote>
+<pre><code>Ti.Calendar.dataSource("coredata");
+</code></pre>
+</blockquote>
+
+<h2><code>Ti.Calendar.createView(object)</code></h2>
+
+<p>This will create a calendarView with controls to move back an forth between months.</p>
+
+<h3>Arguments</h3>
+
+<ul>
+<li>[boolean] <strong>editable</strong>: Turns "swipe-to-delete" on or off. Defaults to  <em>false</em></li>
+<li>[string] <strong>color</strong>: This is required by Titanium for some reason. Just set it to "<em>white</em>"</li>
+</ul>
+
+<h3>Example</h3>
+
+<blockquote>
+<pre><code>var calendarView = Ti.Calendar.createView({
+    top: 0,
+    editable: true,
+    color: "white"
+});
+</code></pre>
+</blockquote>
+
+<h2><code>Ti.Calendar.addEvent(object)</code></h2>
+
+<p>This will add an event to your calendar object.</p>
+
+<h3>Parameters</h3>
+
+<ul>
+<li><p><strong>EventKit</strong>   </p>
+
+<ul>
+<li>[string] <strong>title</strong>: Event title</li>
+<li>[string] <strong>location</strong>: Events location.</li>
+<li>[string] <strong>note</strong>: Event notes.</li>
+<li>[date] <strong>startDate</strong>: Events start. (Javascript date object)</li>
+<li>[date] <strong>endDate</strong>: Events end. (Javascript date object) </li>
+<li>[object] <strong>recurrence</strong>: Recurrence rule (<strong>EventKit only</strong>)</li>
+</ul></li>
+<li><p><strong>Core Data</strong> (Including the above)      </p>
+
+<ul>
+<li>[string] <strong>type</strong>: Event type. E.g: <em>public</em> or <em>private</em></li>
+<li>[string] <strong>attendees</strong>: Comma-separated list of attendees</li>
+<li>[string] <strong>identifier</strong>: Event identifier.</li>
+<li>[string] <strong>organizer</strong>: Name of the organizer</li>
+</ul></li>
+</ul>
+
+<h3>Example</h3>
+
+<blockquote>
+<pre><code>var endDate = new Date();
+endDate.setHours(endDate.getHours()+3); // Set event to last 3 hours.
+
+// Date to end our recurring event
+var recurringEnd = new Date();
+recurringEnd.setMonth(recurringEnd.getMonth()+6); // Recurring ends in 6 months
+
+calendar.addEvent({
+    title: "Attend the 2011 WWDC conference",   
+    startDate: new Date(),  
+    endDate: endDate,   
+    location: "San Francisco",   
+    identifier: Ti.Calendar.identifier,
+    type:"public",
+    attendees: "Steve, Phil",
+    organizer: "Chris Magnussen",
+    note: "Be mad about not getting the iPhone 5",
+    recurrence: {
+         frequency: "month", // day, week, month, year
+         interval: 1,
+         end: recurringEnd
+    }
+});
+</code></pre>
+</blockquote>
+
+<h2><code>calendarView.selectTodaysDate([void])</code></h2>
+
+<p>Select todays date in the calendarView. <br />
+Nothing more, nothing less..</p>
+
+<h3>Example</h3>
+
+<blockquote>
+<pre><code>var calendarView = Ti.Calendar.createView();
+var todayButton = Ti.UI.createButton({title: "Today"});
+
+todayButton.addEventListener("click", function() {
+    calendarView.selectTodaysDate();
+});
+
+window.setLeftNavButton(todayButton);
+</code></pre>
+</blockquote>
+
+<h2><code>calendarView.selectDate(ids[date])</code></h2>
+
+<p>Programatically set active date.</p>
+
+<h3>Example</h3>
+
+<blockquote>
+<pre><code>var calendarView = Ti.Calendar.createView();
+var dateButton = Ti.UI.createButton({title: "Set custom date"});
+
+dateButton.addEventListener("click", function() {
+    var newDate = new Date();
+    // Add 3 days to current date
+    newDate.setDate(newDate.getDate()+3);
+
+    calendarView.selectDate(newDate);
+});
+
+window.setLeftNavButton(dateButton);
+</code></pre>
+</blockquote>
+
+<h2>Properties</h2>
+
+<h2><code>Ti.Calendar.identifier (read-only)</code></h2>
+
+<p>This can be used for the <strong><em>identifier</em></strong>-parameter in the <em>createView()</em>-instance. </p>
+
+<h3>Returns</h3>
+
+<ul>
+<li>[string] MD5 sum of globallyUniqueString</li>
+</ul>
+
+<h2>Events</h2>
+
+<h2><code>event:clicked</code></h2>
+
+<p>When adding this to the calendar-view you will get all event-data in a single array whenever a user clicks the event-table.</p>
+
+<h3>Returns</h3>
+
+<ul>
+<li>[string] <strong>title</strong></li>
+<li>[string] <strong>type</strong> (*)</li>
+<li>[string] <strong>location</strong></li>
+<li>[string] <strong>attendees</strong> (*)</li>
+<li>[string] <strong>description</strong> (*)</li>
+<li>[string] <strong>identifier</strong> (**)</li>
+<li>[string] <strong>organizer</strong> (*)</li>
+<li>[date] <strong>startDate</strong> (Standard dateTime format)</li>
+<li>[date] <strong>endDate</strong> (Standard dateTime format)</li>
+</ul>
+
+<p>(*) Only available when using Core Data as the data source. <br />
+(**) When using Core Data your custom identifier is returned, else the auto generated eventIdentifier in EventKit is returned.</p>
+
+<h3>Example</h3>
+
+<blockquote>
+<pre><code>calendarView.addEventListener("event:clicked", function(e) {
+    var event = e.event;
+    var start_date = new Date(event.startDate);
+    alert(event.title+" will start "+start_date);
+});
+</code></pre>
+</blockquote>
+
+<h2>Usage</h2>
+
+<p>See example.</p>
+
+<h2>Author</h2>
+
+<p>Chris Magnussen for Appgutta, DA.</p>
+
+<ul>
+<li><a href="http://twitter.com/crmag">Twitter</a></li>
+<li><a href="http://www.appgutta.no">Appgutta.no</a></li>
+</ul>
+
+<h2>License</h2>
+
+<p>Copyright(c) 2012 by Appgutta, DA. All Rights Reserved. Please see the LICENSE file included in the distribution for further details.</p>

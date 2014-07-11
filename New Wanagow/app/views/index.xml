@@ -1,0 +1,19 @@
+<!-- 
+      index.xml
+      WanagoSistema
+      
+      Created by Alonso Campos on 2014-05-19.
+      Copyright 2014 Alonso Campos. All rights reserved.
+ -->
+
+<Alloy>
+	<Window class="container">
+		<Label id="label">Bienvenido</Label>  
+		<Label id="label1">Desliza para aprender mas.</Label>		
+		<TextField id="email"  borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="black"></TextField>
+		<TextField id="password" passwordMask="true" focusable="place" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="black"></TextField>
+		<Button onClick="login" id="btn1">Entrar</Button>
+		<Button onClick="btn_2" id="btn2">Registrarse</Button>
+		<Label id="label2">Si todavia no tienes una cuenta</Label>
+	</Window>
+</Alloy>

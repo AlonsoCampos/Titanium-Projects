@@ -1,0 +1,51 @@
+/*
+   Next.tss
+   WanagoSistema
+   
+   Created by Alonso Campos on 2014-05-19.
+   Copyright 2014 Alonso Campos. All rights reserved.
+*/
+
+"#container1":{
+	backgroundColor:"c5ccd4"
+
+},
+"#imagenW":{
+	image:"imagen/regis.jpg",
+	height:100,
+	width:800,
+	righ:900,
+	top:20
+},
+"#label2W":{
+	height:100,
+	width:800,
+	righ:900,
+	top:120,
+	backgroundColor:"#313335",
+	layout:"center",
+	color:"#FCFFFF",
+	
+
+},
+"#omitir":{
+	width:100,
+	right:60,
+	backgroundColor:"#EBC805",
+	height:50,
+	top:50,
+	font: {fontFamily: 'Helvetica Neue'},
+	color:"white",
+	
+}/*,
+ "#basicSwitch":{
+	width:100,
+	right:100,
+	left:10,
+	backgroundColor:"white",
+	height:80,
+	top:1000,
+	font: {fontFamily: 'Helvetica Neue'},
+	color:"white",
+	rightButtonMode:"Titanium.UI.INPUT_BUTTONMODE_ALWAYS"
+	}*/

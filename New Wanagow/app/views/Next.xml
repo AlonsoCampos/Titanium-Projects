@@ -1,0 +1,27 @@
+<!-- 
+      Next.xml
+      WanagoSistema
+      
+      Created by Alonso Campos on 2014-05-19.
+      Copyright 2014 Alonso Campos. All rights reserved.
+ -->
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<Alloy>
+	<Window id="container1">
+		<ImageView id="imagenW"></ImageView>
+		<Label id="label2W" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER">
+	          YA CASI TERMINAS
+	    Ayudanos a llevarte solo a los eventos que te interesan llenando esta lista.Puedes hacerlo despues desde la configuracion de tu cuenta</Label>
+		<Button id="omitir" onClick="OmitirPreferencias">Omitir</Button>
+	    
+		<TableView id="tableViewAcademica" top="2" borderRadios="10" width="auto" height="442">
+    	</TableView>
+		<TableView id="tableViewCultural" top="500" borderRadios="10" width="auto" height="1041">
+    	</TableView>
+    	<TableView id="tableViewEntretenimiento" top="1650" borderRadios="10" width="auto" height="1601">
+    	</TableView>
+		
+	</Window>
+	
+</Alloy>

@@ -1,0 +1,74 @@
+<!-- 
+      Evento.xml
+      WanagoSistema
+      
+      Created by Alonso Campos on 2014-05-19.
+      Copyright 2014 Alonso Campos. All rights reserved.
+ -->
+
+<Alloy>
+      <TabGroup backgroundColor="#696969" id="mainTabGroup">
+            <Tab id="tab1" title="Eventos" icon="KS_nav_views.png">
+                <Window id="readWin" onOpen="getTodoList">
+                  <View id="cabecera"/>
+                  <SearchBar id="buscar" barColor="white" barColor="#000" ></SearchBar>
+                  <ImageView id="im1"></ImageView>
+                  <Label id="label">I am a red window.</Label>
+                  <ImageView id="im2"></ImageView>
+                  <TableView id="tableView"/> 
+                  <Button onClick="getTodoList">Refresh</Button>
+                </Window>
+            </Tab>
+            <!--Ventana 1 -->
+            <Tab id="tab2" title="Calendario" icon="KS_nav_views.png">
+					<Window id="fgWin">
+						<View id="fgHeader">
+							<Label id="fgHeaderTitle">Septiembre</Label>
+							<View id="izquierda">
+								<ImageView id="imagenizquierda" image="img/izquierda.png" />
+							</View>
+							<View id="derecha">
+								<ImageView id="imagenderecha" image="img/derecha.png" />
+							</View>
+							<View id="days">
+								<Label id="lun">Lun</Label>
+								<Label id="mar">Mar</Label>
+								<Label id="mie">Mie</Label>
+								<Label id="jue">Jue</Label>
+								<Label id="vie">Vie</Label>
+								<Label id="sab">Sab</Label>
+								<Label id="dom">Dom</Label>
+							</View>
+						</View>
+						<!--<TableView id="tableView"></TableView> -->
+						<View id="fgMain">
+							<View id="fgWrapper">
+								<ScrollView id="fgScrollView"/>
+							</View>
+							
+							<!--<TableView id="tableEventos" borderRadios="10" width="auto" height="442">
+					     </TableView>-->
+						</View>
+					</Window>		
+	
+            </Tab>
+            <Tab id="tab3" title="Rutas" icon="KS_nav_views.png">
+                <Window id="win3" title="">
+                   <WebView id="mapa" url="http://www.lenguajesdeprogramacion.esy.es/">
+                   	
+                   </WebView>>
+                </Window>
+            </Tab>
+            <Tab id="tab4" title="Cuenta" icon="KS_nav_views.png">
+                <Window id="win4" backgroundColor="white" onOpen="principal">
+                	<TableView id="tableViewAcademica" top="0" borderRadios="10" width="auto" height="442">
+    				</TableView>
+					<TableView id="tableViewCultural" top="550" borderRadios="10" width="auto" height="1041">
+    				</TableView>
+    				<TableView id="tableViewEntretenimiento" top="1650" borderRadios="10" width="auto" height="1601">
+    				</TableView>
+                </Window>
+            </Tab>
+        </TabGroup>
+
+</Alloy>

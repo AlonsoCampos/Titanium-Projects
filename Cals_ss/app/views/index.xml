@@ -1,0 +1,32 @@
+<Alloy>
+	<Window id="fgWin">
+		<View id="fgHeader">
+			<Label id="fgHeaderTitle">Septiembre</Label>
+			<View id="izquierda">
+				<ImageView id="imagenizquierda" image="img/izquierda.png" />
+			</View>
+			<View id="derecha">
+				<ImageView id="imagenderecha" image="img/derecha.png" />
+			</View>
+			<View id="days">
+				<Label id="lun">Lun</Label>
+				<Label id="mar">Mar</Label>
+				<Label id="mie">Mie</Label>
+				<Label id="jue">Jue</Label>
+				<Label id="vie">Vie</Label>
+				<Label id="sab">Sab</Label>
+				<Label id="dom">Dom</Label>
+			</View>
+		</View>
+		<!--<TableView id="tableView"></TableView> -->
+		<View id="fgMain">
+			<View id="fgWrapper">
+				<ScrollView id="fgScrollView"/>
+			</View>
+			<TableView id="tableEventos" borderRadios="10" width="auto" height="442">
+	                
+	        </TableView>
+			
+		</View>
+	</Window>		
+</Alloy>

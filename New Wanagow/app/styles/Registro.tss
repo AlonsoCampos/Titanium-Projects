@@ -1,0 +1,155 @@
+/*
+   Registro.tss
+   WanagoSistema
+   
+   Created by Alonso Campos on 2014-05-19.
+   Copyright 2014 Alonso Campos. All rights reserved.
+*/
+
+
+"#container":{
+	backgroundColor:"white"
+
+},
+"#label1w":{
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	color:"black",
+	layout:"center",
+	top:190
+
+},
+"#label2w":{
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	top:410
+	
+},
+"#label3w":{
+	width:100,
+	right:100,
+	left:260,
+	height:50,
+	top:650
+
+},
+"#imagenw":{
+	image:"imagen/reeee.jpg",
+	height:100,
+	width:800,
+	righ:900,
+	top:20
+},
+"#imagew":{
+	image:"imagen/face.jpg",
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	top:130
+},
+"#txtEmailw":{
+	    width:300,
+		right:50,
+		left:250,
+		height:45,
+		top:250,
+		hintText:"Email",
+		borderColor:"#F4CE00",
+		borderWidth:1.2,
+		borderRadius:10,
+        borderStyle:"Ti.UI.INPUT_BORDERSTYLE_ROUNDED",
+        color:"black"
+		
+},
+"#txtPasswordw":{
+	    width:300,
+		right:50,
+		left:250,
+		height:45,
+		top:300,
+		borderWidth:1.2,
+		borderRadius:10,
+		hintText:"Password",
+		borderColor:"#F4CE00",
+	    borderStyle:"Ti.UI.INPUT_BORDERSTYLE_ROUNDED",
+	    color:"black"
+		
+},
+"#txtconfirmew":{
+	    width:300,
+		right:50,
+		left:250,
+		height:45,
+		top:350,
+		hintText:"Confirme Password",
+		borderColor:"#F4CE00",
+		borderStyle:"Ti.UI.INPUT_BORDERSTYLE_ROUNDED",
+		color:"black"
+		
+		
+},
+"#txtnombrew":{
+	    width:300,
+		right:50,
+		left:250,
+		height:45,
+		top:450,
+		hintText:"Nombre",
+		borderColor:"#F4CE00",
+		borderStyle:"Ti.UI.INPUT_BORDERSTYLE_ROUNDED",
+		color:"black"
+		
+		
+},
+"#txtapellidow":{
+	    width:300,
+		right:50,
+		left:250,
+		height:45,
+		top:500,
+		hintText:"Apellido",
+		borderColor:"#F4CE00",
+		borderStyle:"Ti.UI.INPUT_BORDERSTYLE_ROUNDED",
+		color:"black"
+		
+},
+"#btn1w":{
+	width:300,
+	right:300,
+	left:250,
+	backgroundColor:"#E3C109",
+	height:50,
+	top:570,
+	font: {fontFamily: 'Helvetica Neue'},
+	color:"white"
+},
+"#genero":{
+	backgroundColor:'#336699',
+    top:650,
+    style:Titanium.UI.iPhone.SystemButtonStyle.BAR,
+    height:40,
+    width:250,
+    left:320,
+    value:true,
+}/*,
+"#btn3w":{
+	width:100,
+	right:100,
+	left:436,
+	backgroundColor:"#C5B76A",
+	height:50,
+	top:650,
+	font: {fontFamily: 'Helvetica Neue'},
+	color:"white"
+}*/,
+"#btn4w":{
+	width:100,
+	right:500,
+	left:600,
+	backgroundColor:"#515050",
+	height:50,
+	top:750,
+	font: {fontFamily: 'Helvetica Neue'},
+	color:"white",
+	
+	
+}

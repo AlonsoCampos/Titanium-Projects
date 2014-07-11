@@ -1,0 +1,34 @@
+<!-- 
+      Registro.xml
+      WanagoSistema
+      
+      Created by Alonso Campos on 2014-05-19.
+      Copyright 2014 Alonso Campos. All rights reserved.
+ -->
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<Alloy>
+	<Window id="container">
+		<ImageView id="imagenw"></ImageView>
+		<ImageView id="imagew"></ImageView>
+		<ImageView id="imagew"></ImageView>
+		<Label id="label1w">DATOS DE LA CUENTA</Label>
+		<TextField id="txtEmailw"></TextField>
+		<TextField id="txtPasswordw" passwordMask="true"></TextField>
+		<TextField id="txtconfirmew" passwordMask="true"></TextField>
+		<Label id="label2w">DATOS DEL USUARIO</Label>
+		<TextField id="txtnombrew"></TextField>
+		<TextField id="txtapellidow"></TextField>
+		<Button id="btn1w">Fecha de Nacimiento</Button>
+		<Label id="label3w">Sexo:</Label>
+		<ButtonBar id="genero">
+            <Labels>
+                <Label>Mujer</Label>
+                <Label>Hombre</Label>
+            </Labels>
+        </ButtonBar>
+		<Button id="btn4w" onClick="NuevaCuenta">Siguiente</Button>
+		<ImageView id="imagew"></ImageView>
+	</Window>
+	
+</Alloy>

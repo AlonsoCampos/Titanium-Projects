@@ -1,0 +1,131 @@
+/*
+   index.tss
+   cal
+   
+   Created by Alonso Campos on 2014-05-14.
+   Copyright 2014 Alonso Campos. All rights reserved.
+
+"#tableView":{
+	height:1000,
+},*/
+"#fgWin":{
+	backgroundColor:'#fff',
+	navBarHidden:true,
+	tabBarHidden:true,
+	layout:'vertical',
+	exitOnClose:true
+},
+"#fgMain": {
+	backgroundColor: '#fff',
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
+},
+"#fgWrapper":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	backgroundColor:'transparent'
+},
+"#fgScrollView":{
+	width: Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	contentWidth: Ti.UI.FILL,
+	layout:'horizontal',
+	backgroundColor:'transparent',
+	scrollType:'vertical'
+}
+"#fgHeader":{
+	backgroundColor:'#555',
+	width:Ti.UI.FILL,
+	height:100
+},
+"#fgHeaderTitle":{
+	text:'TiFlexiGrid',
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	color:'#fff',
+	font:{fontSize:18,fontWeight:'bold'}
+},
+"#days":{
+	text:'TiFlexiGrid',
+	width:'100%',
+	height:30,
+	backgroundColor:"#555",
+	top:70
+},
+"#lun":{
+	width:55,
+	height:30,
+	color:'#fff',
+	font:{fontSize:18,fontWeight:'bold'},
+	layout:'horizontal',
+	left:35
+},
+"#mar":{
+	width:55,
+	height:30,
+	color:'#fff',
+	font:{fontSize:18,fontWeight:'bold'},
+	layout:'horizontal',
+	left:145
+},
+"#mie":{
+	width:55,
+	height:30,
+	color:'#fff',
+	font:{fontSize:18,fontWeight:'bold'},
+	layout:'horizontal',
+	left:255
+}
+,
+"#jue":{
+	width:55,
+	height:30,
+	color:'#fff',
+	font:{fontSize:18,fontWeight:'bold'},
+	layout:'horizontal',
+	left:365
+}
+,
+"#vie":{
+	width:55,
+	height:30,
+	color:'#fff',
+	font:{fontSize:18,fontWeight:'bold'},
+	layout:'horizontal',
+	left:475
+}
+,
+"#sab":{
+	width:55,
+	height:30,
+	color:'#fff',
+	font:{fontSize:18,fontWeight:'bold'},
+	layout:'horizontal',
+	left:585
+}
+,
+"#dom":{
+	width:55,
+	height:30,
+	color:'#fff',
+	font:{fontSize:18,fontWeight:'bold'},
+	layout:'horizontal',
+	left:695
+},
+"#tableEventos":{
+	top: 547
+},
+"#izquierda":{
+	backgroundColor:"transparent",
+	width: 20,
+	height:30,
+	left:10	
+},
+"#derecha":{
+	backgroundColor:"transparent",
+	width: 20,
+	height:30,
+	right:10	
+}
+

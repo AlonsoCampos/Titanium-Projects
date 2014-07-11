@@ -1,0 +1,96 @@
+/*
+   index.tss
+   WanagoSistema
+   
+   Created by Alonso Campos on 2014-05-19.
+   Copyright 2014 Alonso Campos. All rights reserved.
+*/
+
+
+".container": {
+	backgroundColor:"#f4ce00"
+},
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+} 
+"#email":{
+	width:300,
+		right:50,
+		left:250,
+		height:45,
+		top:600,
+		borderRadius:10,
+		borderColor: 'black',
+		borderWidth: 2,
+		hintText:"Email"
+	
+		
+},
+"label":{
+	width:300,
+	layout:"center",
+	Color:"black",
+	height:45,
+	top:50
+	
+},
+"#password":{
+	width:300,
+		right:50,
+		left:250,
+		height:45,
+		top:650,
+		borderRadius:10,
+		borderColor: 'black',
+		borderWidth: 2,
+		hintText:"Password"
+		
+		
+	
+},
+"#label1":{
+	width:400,
+	layout:"center",
+	Color:"black",
+	height:45,
+	top:550,
+	left:"38%"
+	
+	
+},
+"#btn1":{
+	width:200,
+	right:100,
+	left:300,
+	borderRadius: 15,
+	backgroundColor:"#515050",
+	height:50,
+	top:700,
+	font: {fontFamily: 'Helvetica Neue'},
+	color:"white"
+},
+"#btn2":{
+	width:200,
+	right:100,
+	left:300,
+	borderRadius: 10,
+	backgroundColor:"#515050",
+	height:50,
+	top:800,
+		font: {fontFamily: 'Helvetica Neue'},
+		
+	color:"white"
+	
+},
+"#label2":{
+	width:400,
+	layout:"center",
+	Color:"black",
+	height:45,
+	top:750,
+	left:"38%"
+	
+	
+}
