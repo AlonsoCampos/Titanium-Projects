@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="container">
+		<Picker id="selector" selectionIndicator="true">
+            <PickerColumn id="columna1">
+                <PickerRow title="Opción 1" />
+                <PickerRow title="Opción 2" />
+                <PickerRow title="Opción 3" />
+                <PickerRow title="Opción 4" />
+            </PickerColumn>          
+        </Picker>
+	</Window>
+</Alloy>

@@ -1,0 +1,74 @@
+!SESSION 2014-04-09 10:30:33.084 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_51
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=es_ES
+Framework arguments:  -keyring /Users/carlosvera/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/carlosvera/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-04-09 10:30:47.610
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-04-09 10:30:47.836
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-04-09 10:30:47.836
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-04-09 10:30:47.836
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.e4.ui.css.core 4 0 2014-04-09 10:30:52.820
+!MESSAGE CSS property 'maximize-visible' has been deprecated: renamed as swt-maximize-visible
+
+!ENTRY org.eclipse.e4.ui.css.core 4 0 2014-04-09 10:30:52.824
+!MESSAGE CSS property 'minimize-visible' has been deprecated: renamed as swt-minimize-visible
+
+!ENTRY org.eclipse.ui.workbench 4 2 2014-04-09 10:30:56.195
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.IllegalStateException: Job manager has been shut down.
+	at org.eclipse.core.internal.jobs.JobManager.schedule(JobManager.java:1114)
+	at org.eclipse.core.internal.jobs.InternalJob.schedule(InternalJob.java:430)
+	at org.eclipse.core.runtime.jobs.Job.schedule(Job.java:436)
+	at com.appcelerator.titanium.update.core.release.TitaniumStudioRelease.<init>(TitaniumStudioRelease.java:65)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.getStudioUpdates(TitaniumSDKUpdater.java:340)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasStudioUpdates(TitaniumSDKUpdater.java:244)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasUpdates(TitaniumSDKUpdater.java:238)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasUpdates(TitaniumSDKUpdater.java:214)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.earlyStartup(TitaniumUpdateStartup.java:60)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2551)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.ui 4 4 2014-04-09 10:30:56.196
+!MESSAGE Unhandled Exception
+
+!ENTRY com.appcelerator.titanium.update.ui 4 0 2014-04-09 10:30:56.196
+!MESSAGE Unable to execute early startup code for an extension
+!STACK 0
+java.lang.IllegalStateException: Job manager has been shut down.
+	at org.eclipse.core.internal.jobs.JobManager.schedule(JobManager.java:1114)
+	at org.eclipse.core.internal.jobs.InternalJob.schedule(InternalJob.java:430)
+	at org.eclipse.core.runtime.jobs.Job.schedule(Job.java:436)
+	at com.appcelerator.titanium.update.core.release.TitaniumStudioRelease.<init>(TitaniumStudioRelease.java:65)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.getStudioUpdates(TitaniumSDKUpdater.java:340)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasStudioUpdates(TitaniumSDKUpdater.java:244)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasUpdates(TitaniumSDKUpdater.java:238)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasUpdates(TitaniumSDKUpdater.java:214)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.earlyStartup(TitaniumUpdateStartup.java:60)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2551)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-04-09 10:30:56.871 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_51
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=es_ES
+Framework arguments:  -keyring /Users/carlosvera/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/carlosvera/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-04-09 10:31:02.996
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

@@ -1,0 +1,18 @@
+<Alloy> 
+        <TabGroup id="mainTabGroup"> 
+            <Tab id="tab1" > 
+                <Window id="readWin" onOpen="getTodoList"> 
+                     <TableView id="tableView"/> 
+                     <Button onClick="getTodoList">Refresh</Button>
+                </Window>
+            </Tab> 
+            <Tab id="tab2"> 
+                <Window id="insertWin"> 
+                     <View id="mainView"> 
+                           <TextField id="inserTxtF"/> 
+                    <Button id="insertBtn" /> 
+                     </View> 
+                </Window> 
+            </Tab> 
+        </TabGroup> 
+</Alloy>

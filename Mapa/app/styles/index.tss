@@ -1,0 +1,69 @@
+"#ubicacionText": {
+	backgroundColor:"white",
+	top:5,
+	width:200,
+	height:30,
+	left:10,
+	borderStyle:"Ti.UI.INPUT_BORDERSTYLE_ROUNDED"
+},
+"#destinoText": {
+	backgroundColor:"white",
+	top:40,
+	width:200,
+	height:30,
+	left:10,
+	borderStyle:"Ti.UI.INPUT_BORDERSTYLE_ROUNDED"
+},
+"#intercambiar": {
+	backgroundColor:"#1B1B1B",
+	top:5,
+	right:10
+},
+"#gow": {
+	backgroundColor:"#DABB0E",
+	top:40,
+	right:10
+},
+"#cabecera": {
+	//borderRadius:"10", 
+	backgroundColor:"gray", width:"100%" ,height:"75",top:0
+},
+"#mapa": {
+	//borderRadius:"10", 
+	width:"100%" ,height:"100%",top:75
+},
+"#win2":{
+	backgroundColor:'#FF000000',
+	navBarHidden:true
+},
+"#backButton":{
+	bottom:'20dp',
+	height:'40dp',
+	width:'200dp'
+},
+"#prevMes":{
+	left:'15dp',
+	width:'auto',
+	title:"Previo"
+},
+"#tituloMes":{
+	width:'200dp',
+	height:'24dp',
+	textAling:'center',
+	color : '#3a4756',
+	font : {fontSize : 20, fontWeight : 'bold'}
+},
+"#toolBar":
+{
+	top : '0dp',
+	width : '322dp',
+	height : '50dp',
+	backgroundColor : '#FFFFD800',
+	layout : 'vertical'
+
+},
+"#toolBarTitulo":{
+	top : '3dp',
+	width : '322dp',
+	height : '24dp'
+}

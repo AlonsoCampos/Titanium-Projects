@@ -1,0 +1,37 @@
+<Alloy>
+	<TabGroup backgroundColor="Gray" >
+            <Tab id="tab1" title="Rutas" icon="/icono.png">
+                <Window id="win1" title="Rutas" backgroundColor="White">
+                	<View id="cabecera" />
+                <!-- Descargar ALLOY-910	
+                	<TextField hintText="Ubicacion" id="ubicacionText"></TextField>
+                   	<TextField hintText="Destino" id="destinoText"></TextField>
+                   	<Button id="intercambiar"></Button>
+                   	<Button id="gow">Gow!</Button> -->
+                   	<WebView id="mapa" url="https://maps.google.com.mx/" />
+                </Window>
+            </Tab>
+            <Tab id="tab2" title="Calendario" icon="/icono.png">
+                <Window id="win2" title="Calendario">
+                    <TableView id="table">
+            			<TableViewSection id="sectionFruit" headerTitle="Fruit">
+                			<TableViewRow title="Apple"/>
+                			<TableViewRow title="Bananas"/>
+                			 
+                			 	
+                		
+            			</TableViewSection>
+            			<TableViewSection id="sectionVeg" headerTitle="Vegetables">
+			                <TableViewRow title="Carrots"/>
+			                <TableViewRow title="Potatoes"/>
+            			</TableViewSection>
+			            <TableViewSection id="sectionFish" headerTitle="Fish">
+			                <TableViewRow title="Cod"/>
+			                <TableViewRow title="Haddock"/>
+			            </TableViewSection>
+        </TableView>
+                </Window>
+            </Tab>
+        </TabGroup>
+</Alloy>
+

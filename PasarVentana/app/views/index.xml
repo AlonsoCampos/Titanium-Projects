@@ -1,0 +1,6 @@
+<Alloy>
+	<Window backgroundColor="blue">
+        <Label id="label">I am a blue window!</Label>
+        <Button onClick="animateOpen">Nueva Ventana</Button>
+    </Window>
+</Alloy>

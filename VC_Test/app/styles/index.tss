@@ -1,0 +1,32 @@
+"TabGroup":{ 
+       backgroundColor:"black", 
+}, 
+"View":{     
+       layout:'vertical', 
+} 
+"#tab1":{ 
+       title:"Remote Read", 
+       icon:"KS_nav_ui.png", 
+}, 
+"#tab2":{ 
+       title:"Remote Insert", 
+       icon:"KS_nav_ui.png", 
+}, 
+"#tableView":{ 
+       headerTitle : '', 
+       top: 50
+}, 
+"#inserTxtF":{ 
+       color:"#336699", 
+       top:"10dp", 
+       left:"10dp", 
+       width:"290dp", 
+       height:"50dp", 
+}, 
+"#insertBtn":{ 
+       title:"Insert", 
+       top:"10dp", 
+       left:"180dp", 
+       width:"124dp", 
+       height:"50dp", 
+}

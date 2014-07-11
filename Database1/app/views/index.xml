@@ -1,0 +1,9 @@
+<Alloy> 
+	<Model src="book"/> 
+	<Window> 
+		<TableView id="table" /> 
+		<TextField hintText="Titulo" id="title" top="50"></TextField>
+		<TextField hintText="Autor" id="autor"></TextField>
+		<Button onClick="addModel" top="70">Add</Button>
+	</Window> 
+</Alloy>

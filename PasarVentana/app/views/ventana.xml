@@ -1,0 +1,5 @@
+<Alloy>
+	<Window backgroundColor="white">
+        <Label id="label">Soy una nueva ventana</Label>
+	</Window>
+</Alloy>

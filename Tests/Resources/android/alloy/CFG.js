@@ -1,0 +1,1 @@
+module.exports={"sourcemap":false,"adapters":["sql"]};
